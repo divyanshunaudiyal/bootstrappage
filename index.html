@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Frontend Bootcamp</a>
 
@@ -36,13 +36,13 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="" class="nav-link">about</a>
+              <a href="#learn" class="nav-link">Learn</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">services</a>
+              <a href="#newsletter" class="nav-link">Newsletter</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">gallery</a>
+              <a href="#FAQs" class="nav-link">FAQs</a>
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
+    <section class="bg-primary text-light p-5" id="newsletter">
       <div class="container">
         <div class="justify-content-evenly align-items-center d-md-flex">
           <h3 class="mb-3 mb-md-0" style="width: inherit">
@@ -126,8 +126,10 @@
         </div>
       </div>
     </section>
-    <section class="m-5">
-      <div class="container d-md-flex align-items-center gx-5">
+
+    <!-- section light -->
+    <section class="m-5" id="learn">
+      <div class="container d-md-flex align-items-center">
         <img
           src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png"
           alt=""
@@ -135,19 +137,135 @@
         />
         <div class="">
           <h1 class="">Learn The Fundamentals</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
+            incidunt quidem veritatis commodi nulla!
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eum
+            obcaecati reiciendis minima iure nostrum harum nihil! Modi aliquam
+            provident, omnis dolore commodi ex! Possimus vitae distinctio fuga
+            ipsa accusantium!
           </p>
           <div class="align-items-center">
             <i class="bi bi-chevron-right"></i>
-            <a class="" href="#">read more</a>
+            <a class="btn btn-light" href="#">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  section-dark -->
+    <section class="bg-dark text-light p-5">
+      <div class="container d-md-flex align-items-center py-5 g-4">
+        <div class="">
+          <h1 class="">Learn React</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            mollitia?
+          </p>
+          <p class="">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            inventore natus corporis repudiandae aliquam dignissimos porro hic
+            provident sunt culpa ea, blanditiis facilis aperiam laudantium
+            placeat in sapiente saepe possimus, cumque totam? Magnam, ex.
+            Placeat ducimus ab ex ipsa enim.
+          </p>
+          <div class="align-items-center">
+            <i class="bi bi-chevron-right"></i>
+            <a class="btn btn-primary" href="#">read more</a>
+          </div>
+        </div>
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg"
+          alt=""
+          class="img-fluid w-75 my-4 my-md-0"
+        />
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="p-5" id="FAQs">
+      <h1 class="p-5 text-success text-center">Frequently Asked Questions</h1>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-1"
+            >
+              Where are you located?
+            </button>
+          </h2>
+          <div
+            id="question-1"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              necessitatibus doloremque dicta eum voluptatibus obcaecati, sit
+              quas voluptatem tempora voluptates laudantium sint et. Magni optio
+              exercitationem architecto asperiores quo officiis pariatur illum
+              reprehenderit nostrum temporibus! Dolores obcaecati, corporis
+              eveniet sequi, quas laudantium expedita molestias sed totam error
+              cupiditate consequuntur.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-2"
+            >
+              How to take classes and what re the class timings?
+            </button>
+          </h2>
+          <div
+            id="question-2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+              necessitatibus nostrum sed optio perspiciatis. Impedit expedita
+              quas ut dolor dolore praesentium suscipit placeat aperiam quia
+              odit. Possimus pariatur illum expedita veniam repudiandae,
+              dignissimos porro omnis, numquam maxime soluta fugiat magnam
+              reiciendis quod nulla? Unde eum voluptatibus labore debitis,
+              repellendus enim tempora?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-3"
+            >
+              How to pay?
+            </button>
+          </h2>
+          <div
+            id="question-3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+              aperiam, quos sunt perspiciatis expedita aspernatur. Eveniet
+              temporibus autem, illum sint unde ex. Perferendis maxime modi
+              consectetur accusamus voluptatum nam sapiente iusto? Sunt porro
+              consectetur distinctio libero minus fugit rerum natus, ea quisquam
+              id saepe maiores iusto eaque. Doloribus, reiciendis quidem?
+            </div>
           </div>
         </div>
       </div>
