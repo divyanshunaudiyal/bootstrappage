@@ -51,16 +51,22 @@
 
     <!-- Showcase  -->
     <section
-      class="bg-dark text-light d-md-flex py-4 justify-content-between text-center align-items-center py-lg-0 pt-lg-5"
+      class="bg-dark text-light d-md-flex py-4 justify-content-center text-center align-items-center py-lg-0 pt-lg-5"
     >
-      <div>
+      <div class="">
         <h1>Become a <span class="text-warning">Web Developer</span></h1>
         <p class="my-4">
           A coding bootcamp is a concentrated course that teaches essential
           skills and provides real-world training for people seeking jobs in
           computer
         </p>
-        <button class="btn btn-outline-primary btn-lg">ENROL NOW</button>
+        <button
+          class="btn btn-outline-primary btn-lg"
+          data-bs-toggle="modal"
+          data-bs-target="#enrol"
+        >
+          ENROL NOW
+        </button>
       </div>
       <img
         class="d-none d-md-block w-50 img-fluid"
@@ -383,6 +389,63 @@
         </a>
       </div>
     </footer>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="enrol"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Fill this form
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="
+            "
+            >
+              <div>
+                <label for="first-name" class="col-form-label"> Name : </label>
+                <input type="text" placeholder="enter name here" />
+              </div>
+              <div>
+                <label for="first-name" class="col-form-label">
+                  Education :
+                </label>
+                <input type="text" placeholder="enter name here" />
+              </div>
+              <div>
+                <label for="first-name" class="col-form-label"> Age : </label>
+                <input type="text" placeholder="enter name here" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
